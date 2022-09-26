@@ -1,12 +1,14 @@
  package com.meghana.web.employee.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Employee {
 	
 	@Id
+	@GeneratedValue
 	private int id;
 	private int empnum;
 	private String ename;
